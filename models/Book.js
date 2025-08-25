@@ -3,12 +3,12 @@ const {Schema} = mongoose
 
 const bookSchema = new Schema({
     title: {
-        type: String, required: [true, "hi"]
+        type: String, required: [true, "Title"]
     },
     author: {
-        type: String, required: [true,  "who is hi"]
+        type: String, required: [true,  "Author"]
     },
-    publicationYear: Number,
+    publicationDate: Date,
     inStock: {
         type: Boolean,
         default: true
